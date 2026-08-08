@@ -3,7 +3,7 @@
 // @namespace    local.ollama.tools
 // @version      1.0.0
 // @description  Lets Ollama inspect the current page's HTML and use it to rewrite text in the focused editor.
-// @author       You
+// @author       colicool
 // @match        http://*/*
 // @match        https://*/*
 // @run-at       document-idle
