@@ -38,7 +38,7 @@
 
     const button = document.createElement('button');
     button.type = 'button';
-    button.textContent = '✨ Page rewrite';
+    button.textContent = '✨ Rewrite';
     button.title = 'Rewrite using context selected by Ollama from this page';
     button.setAttribute('aria-label', 'Rewrite text using the current page HTML as context');
     shadow.append(button);
@@ -414,7 +414,7 @@
     function resetButtonSoon(delay = 1800) {
         window.setTimeout(() => {
             if (!requestInProgress) {
-                setButtonState('idle', '✨ Page rewrite', 'Rewrite using context selected by Ollama from this page');
+                setButtonState('idle', '✨ Rewrite', 'Rewrite using context selected by Ollama from this page');
             }
         }, delay);
     }
@@ -487,7 +487,7 @@
         window.clearTimeout(hideTimer);
         activeEditor = editor;
         host.style.display = 'block';
-        if (!requestInProgress) setButtonState('idle', '✨ Page rewrite', 'Rewrite using context selected by Ollama from this page');
+        if (!requestInProgress) setButtonState('idle', '✨ Rewrite', 'Rewrite using context selected by Ollama from this page');
         requestAnimationFrame(positionButton);
     }
 
